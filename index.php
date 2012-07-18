@@ -24,67 +24,124 @@
 </head>
 <body>
 	
-	<header>
+	<header class="full-screen">
 		<div class="container">
 			
 			<div class="sixteen columns">
-			
-				Te Koop
+		
+				<span class="for-sale">Te koop</span>
 
 				<h1>
 					Bovenste Puth 10
 					<div class="subheader">6155 NH Puth, Limburg</div>
 				</h1>
 
-				<p class="lead">
-	In het kerkdorp Puth wordt deze schitterende voormalige boerderijwoning te koop aangeboden. Deze woning is onlangs volledig gerenoveerd met louter duurzame materialen. Onlangs zijn eveneens het dak en de kozijnen vernieuwd en voorzien van een hoge isolatiewaarde. Binnen in de woning treft u veel sfeerelementen en authentieke materialen aan. Achterom is een ruime tuinkamer gerealiseerd met een optimaal tuincontact. Kortom; een woning welke u beslist gezien moet hebben!				
-				</p>
-
 				Vraagprijs: &euro; 219.000 k.k.
 
-				<a href="#">Neem contact op</a>
-				<a href="#">Bekijk op Google Streetview</a>
+				<figure>
+					<img src="img/vooraanzicht.jpg" alt="Vooraanzicht">
+					<img src="img/living.jpg" alt="Living" class="middle">
+					<img src="img/tuin.jpg" alt="Aanzicht op de tuin">
+				</figure>
+
+				<p class="lead">
+	In het kerkdorp Puth wordt deze schitterende voormalige boerderijwoning te koop aangeboden. Deze woning is onlangs volledig gerenoveerd met louter duurzame materialen.</p><p>Onlangs zijn eveneens het dak en de kozijnen vernieuwd en voorzien van een hoge isolatiewaarde. Binnen in de woning treft u veel sfeerelementen en authentieke materialen aan. Achterom is een ruime tuinkamer gerealiseerd met een optimaal tuincontact.</p><p class="lead">Kortom; een woning welke u beslist gezien moet hebben!
+				</p>
+
+				<nav>
+					<a href="#more">Meer informatie</a>
+					<a href="#contact">Neem contact op</a>
+				</nav>
+
 
 			</div>
 
 		</div>
 	</header>
 
-	<div class="container">
+	<div id="more">
 
-		<article class="twelve columns">
+		<div class="container">
+	
+			<article class="twelve columns">
+				<section>
+					
+					<h2>Begane grond</h2>
 
-			<section>
-				Test
-			</section>
+					<p>Via de authentieke voordeur, welke zich aan de rechter zijgevel bevindt, bereikt u de ruime hal met plavuizenvloer. Hier bevindt zich de wasruimte met alle benodigde aansluitpunten, de meterkast (10 groeps, 2 aardleksch.) en het gastentoilet. Verder bevinden zich hier de deuren naar de living en naar de tuinkamer.</p>
 
-		</article>		
+					<h3>Keuken</h3>
 
-		<aside class="four columns">
-			<dl>
-				<dt>Inhoud</dt>
-				<dd>400 m&sup3;</dd>
+					<p>De leefkeuken voorziet u van dezelfde plavuizenvloer. De aanwezige inbouwkeuken staat in een hoekopstelling en voorziet u van veel bergruimte. U treft o.a. de navolgende apparatuur aan; een keramische kookplaat, een oven, een afzuigkap en een ruime koelkast.</p>
 
-				<dt>Woonoppervlak</dt>
-				<dd>127 m&sup2;</dd>
+					<h3>Living</h3>
 
-				<dt>Perceeloppervlak</dt>
-				<dd>246 m&sup2;</dd>
+					<p>De living is voorzien van een massieve eikenhouten parketvloer. De oude balken geven het geheel een authentieke uitstraling. </p>
 
-				<dt>Isolatie dak</dt>
-				<dd>Unidek</dd>
+					<h3>Tuinkamer met achtertuin</h3>
 
-				<dt>Isolatie glas</dt>
-				<dd>HR beglazing</dd>
-			</dl>	
-		</aside>
+					<p>Aan de achterzijde van de woning bevindt zich de royale tuinkamer met keurige laminaatvloer. Middels de grote schuifpui heeft u vanuit hier een optimaal tuincontact.</p>
+
+					<p>De volledig besloten achtertuin voorziet u van veel privacy. Het terras is voorzien van grote tegels (ca. 1.00 x 1.00 m.) Verder treft u nog een gazon en een ruim tuinhuis aan voor extra opbergmogelijkheid.</p>
+
+					<h2>Eerste verdieping</h2>
+
+					<p>Vanuit de uiterst ruime overloop bereikt u de twee slaapkamers en de moderne badkamer. Ook hier zijn de authentieke deuren bewaard gebleven en in ere hersteld.</p>
+
+					<h3>Master bedroom</h3>
+
+					<p>De ouderkamer is eveneens uiterst ruim. Deze kamer is voorzien van een grote inbouw kast. Ook hier treft u inbouwspots aan. De tweede slaapkamer is voorzien van dezelfde laminaatvloer als de rest van de bovenverdieping.</p>
+
+					<h3>Badkamer</h3>
+
+					<p>De badkamer is modern en voorzien van alle gemakken. U kunt hier gebruik maken van de inloopdouche, het aanwezige whirlpoolbad, het tweede toilet of het wasmeubel. </p>
+
+					<h2>Tweede verdieping</h2>
+
+					<p>Middels de tweede verdieping bereikt u de vliering met veel opbergmogelijkheid.</p>
+
+					<h2>Souterrain</h2>
+
+					<p>Vanuit de hal is de gewelfde kelder te bereiken welke naar eigen believen kan worden ingericht als wijn- en/of proviandkelder.</p>
+
+					<p class="lead">Kortom; een uiterst keurige maar bovenal sfeervolle woning in een uiterst keurige staat voor jarenlang zorgeloos woongenot!!!</p>
+
+				</section>
+
+			</article>		
+
+			<aside class="four columns">
+				<dl>
+					<dt>Inhoud</dt>
+					<dd>400 m&sup3;</dd>
+
+					<dt>Woonoppervlak</dt>
+					<dd>127 m&sup2;</dd>
+
+					<dt>Perceeloppervlak</dt>
+					<dd>246 m&sup2;</dd>
+
+					<dt>Isolatie dak</dt>
+					<dd>Unidek</dd>
+
+					<dt>Isolatie glas</dt>
+					<dd>HR beglazing</dd>
+				</dl>	
+			</aside>	
+
+		</div>
 
 	</div>
 
-	<footer>
+	<footer id="contact" class="full-screen">
+
 		<div class="container">
 
 			<div class="sixteen columns">
+
+				Geïnteresseerd in deze unieke woning? 
+
+				Neem dan vrijblijvend contact op met 
 
 				Voor meer informatie neemt u contact op met
 
@@ -96,6 +153,10 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
 
+	<script src="js/plugins/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/plugins/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/plugins/jquery.parallax-1.1.3.js"></script>
+	<script src="js/plugins/jquery.resize.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

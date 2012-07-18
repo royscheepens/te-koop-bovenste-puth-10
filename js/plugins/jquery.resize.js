@@ -4,10 +4,10 @@ resize = {
     resize.render = support ? resize.renderRealBrowser : resize.renderIe;
     $(window).resize(function() {
       resize.render();
-      utils.getSectionsPositions();
+     // utils.getSectionsPositions();
     });
     resize.render();
-    utils.getSectionsPositions();
+    //utils.getSectionsPositions();
   },
   renderIe: function() {
     var crop, height, pageHeight, pageWidth, width;
@@ -18,7 +18,7 @@ resize = {
       crop = (height - (pageHeight)) / -2;
       $('.full-screen').css({
         height: height,
-        width: width,
+        //width: width,
         marginBottom: crop * 2
       });
     } else {
@@ -26,9 +26,9 @@ resize = {
       crop = (width - pageWidth) / -2;
       $('.full-screen').css({
         height: pageHeight,
-        width: width,
-        marginRight: crop,
-        marginLeft: crop
+        //width: width,
+        //marginRight: crop,
+        //marginLeft: crop
       });
     }
   },
