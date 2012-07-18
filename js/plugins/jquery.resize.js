@@ -14,6 +14,7 @@ resize = {
     pageWidth = width = $(window).width();
     pageHeight = $(window).height();
     height = width * 0.40;
+
     if (height >= (pageHeight)) {
       crop = (height - (pageHeight)) / -2;
       $('.full-screen').css({
@@ -33,8 +34,20 @@ resize = {
     }
   },
   renderRealBrowser: function() {
-    var height;
-    height = $(window).height();
-    $('.full-screen').css({height: height});
+    var pageHeight;
+    pageHeight = $(window).height();
+
+    $('.full-screen').each(function(){
+      var el = $(this);
+      height = el.outerHeight();
+
+      if (height < (pageHeight)) {
+        el.css({height: pageHeight});
+      }
+
+    });
+
+
+   //  $('.full-screen').css({height: height});
   }
 };

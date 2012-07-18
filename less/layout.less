@@ -14,6 +14,9 @@
 	@textColor: #555;
 	@linkColor: #d0a884;
 
+	@lightBrown: #846a3f;
+	@darkBrown: #2c2a24;
+
 
 /**
 * =typography
@@ -112,8 +115,7 @@
 	}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 
-	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
-	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
 	h5 { font-size: 17px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
@@ -133,7 +135,7 @@
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
-	img.scale-with-grid { max-width: 100%; height: auto; }
+	.scale-with-grid { max-width: 100%; height: auto; }
 
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
@@ -149,15 +151,17 @@
 	header {
 		position:relative;
 		z-index:100;
+		background:#fff;
 		text-align:center;
 		.box-shadow(0 3px 7px rgba(0,0,0,0.1));
+		padding:40px 0;
 
 		.for-sale {
 			display:block;
 			font-size:22px;
 			color:#aaa;
 			text-transform:uppercase;
-			padding:40px 0 10px;
+			margin-bottom:10px;
 		}
 
 		h1 {
@@ -205,14 +209,16 @@
 
 			display:inline-block;
 			padding:10px 16px;
-			background:#2c2a24;
+			background:@darkBrown;
 			margin:10px 10px 0;
 			color:#fff;
 			.border-radius(4px);
 			font-size:18px;
+			.animate(all .2s ease);
+
 			&:hover {
-				background:#846a3f;
-				color:#2c2a24;
+				background:@lightBrown;
+				color:@darkBrown;
 			}
 		}
 
@@ -262,6 +268,68 @@
 	}
 
 /**
+* =links
+* @section Links
+* @note Horizontally centered ul, see http://pmob.co.uk/pob/centred-float.htm
+* --------------------------------------------------------------------------------------------------
+*/
+
+	#links {
+		position:fixed;
+		z-index:90;
+		top:0;
+
+		width:100%;
+		height:50px;
+		background:rgba(255,255,255,0.8);
+
+		div {
+			margin:0 auto;
+	        width:100%;
+	        height:50px;
+	        text-align:center;		
+		}
+
+		ul { margin:0; padding:0; }
+		li { display:inline; margin-left:0; }
+		
+		a, a:visited {
+ 			display:inline-block;
+ 			margin:0 10px;
+         	width:auto;
+         	height:36px;
+         	line-height:36px;
+			color:@darkBrown;
+			padding:0 12px;
+			position:relative;
+			top:6px;
+
+			.border-radius(2px);
+			.animate(all .2s ease);
+
+			&:hover {
+				background:#ededed;
+			}
+
+			&.active {
+				background:@darkBrown;
+				color:#fff;
+			}
+
+		}
+
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 767px) {
+
+		// not interesting for mobile
+		#links { display:none; }
+
+	}
+
+/**
 * =general
 * @section Base
 * --------------------------------------------------------------------------------------------------
@@ -270,10 +338,73 @@
 	#more {
 
 		position:relative;
-		z-index:8s0;
+		z-index:80;
 
-		.box-shadow(0 6px 12px rgba(0,0,0,0.3));
 		background:#f5f2ed;
+
+		h2 { 
+			display:block;
+			width:100%;
+			margin-bottom:20px;
+			
+			font-size: 52px; 
+			line-height: 52px; 
+			text-align:center;
+		}
+
+		h3 { 
+			font-size: 28px; 
+			line-height: 34px; 
+			margin-bottom: 8px; 
+		}
+
+		figure {
+			display:block;
+			padding:10px;
+			background:#fff;
+			border: 1px solid lighten(@lightBrown, 50%);
+			.box-shadow(0 3px 6px rgba(0,0,0,0.1));
+			margin-bottom:20px;
+			img { 
+				.scale-with-grid;
+				display:block;
+			}
+		}
+
+		section {
+			// equals height of links box + 20px
+			padding-top:50px;
+		}
+
+
+		dl {
+			padding:20px 0;
+			dt {
+				color:@darkBrown;
+				font-weight:bold; 
+			}
+			dd { 
+				padding:0;
+				margin:0;
+				margin-bottom:10px;
+			}
+
+		}
+
+	}
+
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		#more {
+
+			dl {
+				text-align:center;
+			}
+
+		}
+
 	}
 
 
@@ -284,8 +415,53 @@
 */
 
 	#contact {
-		background:#2c2a24;
-		color:#fff;
+
+		position:relative;
+		z-index:110;
+
+		background:@darkBrown;
+		.box-shadow(inset 0 6px 12px rgba(0,0,0,0.3));
+
+		// padding:40px 0 0;
+		text-align:center;
+		
+		color:#f5f2ed;
+
+		.sixteen.columns {
+			padding-bottom:40px;
+		}
+
+		p {
+			text-shadow:0 1px 0 @darkBrown, 0 2px 0 darken(@darkBrown, 10%);
+			&.lead { font-size:150%; color:#fff; padding-top:40px; }
+		}
+
+		h2 { 
+			color:#fff;
+			text-shadow:0 2px 0 @darkBrown, 0 4px 0 darken(@darkBrown, 10%);
+			margin-bottom:20px;
+			
+			font-size: 52px; 
+			line-height: 52px; 
+			text-align:center;
+		}	
+
+		a, a:visited {
+			display:block;
+			font-size:20px;
+			&:hover {
+				color:#fff;
+			}
+		}
+
+		figure {
+			display:block;
+			width:260px;
+			margin:0 auto;
+			padding:20px 0 0;
+			img { display:block; .border-radius(130px); }
+		}
+
 	}
 
 
