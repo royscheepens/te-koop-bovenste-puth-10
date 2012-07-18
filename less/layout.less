@@ -1,0 +1,123 @@
+/*
+* @updated		07/2012
+* @author		Roy Scheepens / Goal043
+* @file 		layout.less
+* @project		Template
+* --------------------------------------------------------------------------------------------------*/	
+
+/**
+* =vars
+* @section Variables
+* --------------------------------------------------------------------------------------------------
+*/
+
+	@textColor: #444;
+	@linkColor: #222;
+
+
+/**
+* =typography
+* @section Fonts
+* --------------------------------------------------------------------------------------------------
+*/
+	
+// PT Serif
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v4/sDRi4fY9bOiJUbgq53yZCfesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v4/03aPdn7fFF3H6ngCgAlQzBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v4/QABk9IxT-LFTJ_dQzv7xpIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+
+
+
+/**
+* =general
+* @section Base
+* --------------------------------------------------------------------------------------------------
+*/
+
+	body {
+		font: 400 16px/1.8 "PT Serif", sans-serif;
+		background: #f3f3f3;
+		color: @textColor;
+		-webkit-text-stroke: 1px #000 transparent;
+		-webkit-font-smoothing: antialiased; // Fix for webkit rendering	
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #181818;
+		font-weight: normal; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h5 { font-size: 17px; line-height: 24px; }
+	h6 { font-size: 14px; line-height: 21px; }
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 120%;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; }
+
+	address { font-style:normal; }
+
+	a, a:visited { color: @linkColor; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+
+	img.scale-with-grid { max-width: 100%; height: auto; }
+
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+/**
+* =container
+* @section Base
+* --------------------------------------------------------------------------------------------------
+*/
+
+
+	header {
+		border-bottom:1px solid #ccc;
+	}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
