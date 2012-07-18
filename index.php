@@ -7,12 +7,19 @@
 <head>
 	<meta charset="utf-8" />
 
-	<title>Te Koop: Bovenste Puth 10, 6155 NH Puth</title>
+	<title>Te koop: Bovenste Puth 10, 6155 NH Puth</title>
 	<meta name="description" content="In het kerkdorp Puth, wordt deze schitterende voormalige boerderijwoning te koop aangeboden. Deze woning is onlangs volledig gerenoveerd met louter duurzame materialen. Kortom; een woning welke u beslist gezien moet hebben!" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<base href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].str_replace('//','/',dirname($_SERVER['PHP_SELF']).'/'); ?>" />
+
+	<!-- / Facebook Open Graph meta tags -->
+	<meta property="og:image" content="img/vooraanzicht.jpg"/>
+	<meta property="og:title" content="Te koop: Bovenste Puth 10, 6155 NH Puth"/>
+	<meta property="og:description" content="In het kerkdorp Puth wordt deze schitterende voormalige boerderijwoning te koop aangeboden. Deze woning is onlangs volledig gerenoveerd met louter duurzame materialen. Onlangs zijn eveneens het dak en de kozijnen vernieuwd en voorzien van een hoge isolatiewaarde. Binnen in de woning treft u veel sfeerelementen en authentieke materialen aan. Kortom; een woning welke u beslist gezien moet hebben!"/>
+
+	<meta property="og:site_name" content="Roy Scheepens - Multimedia Web Developer"/>
 
 	<link href="less/build.less" type="text/css" rel="stylesheet/less" />
 	<script type="text/javascript" src="js/libs/less-1.3.0.min.js"></script>
